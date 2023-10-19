@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header__width">
+                <a href="#" class="header__title"> Crazy company </a>
+                <nav>
+                    <a href="#"> Главная </a>
+                    <a href="#"> Пользователи </a>
+                    <a href="#" class="header__user">
+                        <img src="./static/user.svg" />
+                        <div class="header__hover-user">
+                            <div class="header__name">Асроров Шодон</div>
+                            <div>Настройки</div>
+                            <div>Выйти</div>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <div class="body__width">
+            <div class="filter">
+                <div class="filter__body">
+                    <div class="filter__title">Фильтр</div>
+                    <input
+                        class="filter__input"
+                        type="text"
+                        placeholder="Поиск по ФИО"
+                    />
+                    <input
+                        class="filter__input"
+                        type="text"
+                        placeholder="Поиск по email"
+                    />
+                    <input
+                        class="filter__input"
+                        type="text"
+                        placeholder="Поиск по номеру телефона"
+                    />
+                    <input
+                        class="filter__input"
+                        type="text"
+                        placeholder="Поиск по роли"
+                    />
+                    <div class="filter__buttons">
+                        <button class="search">Найти</button>
+                        <button class="reset">Сбросить</button>
+                    </div>
+                </div>
+                <span class="filter__toggle">показать фильтр</span>
+            </div>
+            <div class="main">
+                <div class="main__list"></div>
+                <div class="main__pagination">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </div>
+            </div>
+        </div>
+
+        <script defer type="module" src="./index.js"></script>
+    </body>
+</html>

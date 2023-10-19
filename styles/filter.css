@@ -1,0 +1,51 @@
+.filter {
+    display: flex;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.filter__input {
+    padding: 5px 10px;
+}
+
+.filter__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.filter__buttons>button {
+    flex: 1 1 auto;
+    padding: 10px;
+    background-color: #7699FF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: white;
+    cursor: pointer;
+}
+
+.filter__body {
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.filter__body.active {
+    display: flex;
+}
+
+.filter__toggle {
+    border: 0;
+    outline: 0;
+    background-color: #7699FF;
+    writing-mode: vertical-lr;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+
+.filter__title {
+    font-size: 22px;
+}
